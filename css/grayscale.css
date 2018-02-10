@@ -281,3 +281,12 @@ img::selection {
 img::-moz-selection {
   background: transparent;
 }
+
+.card-columns {
+  @include media-breakpoint-only(lg) {
+    column-count: 1;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 4;
+  }
+}
